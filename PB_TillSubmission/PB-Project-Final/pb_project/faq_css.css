@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+	.container{
+		padding-top: 10px;
+		padding-left: 265px;
+		padding-right: 245px; 
+		padding-bottom: 10px;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	}
+	body{
+		background-image: url("Website_light.jpeg");
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
+	}
+
+	h3 {
+	font-weight: 600;
+	font-size: 250%;
+	color: white;
+	-webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+	}
