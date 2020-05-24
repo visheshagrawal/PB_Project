@@ -866,21 +866,93 @@ document.getElementById("cooking").addEventListener("click", function(){
           <h1 class="huge ae-1 margin-bottom-2">Other Categories</h1>
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8"> </span></p>
 
-          <!-- <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
-            <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
-          </form> -->
+          <li class="col-6-12 center ae-5 fromCenter">
+            <!-- <ul> -->
+            <div id="games">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left">Games</a>
+            <div id="games_content">
+            <ul>
+              <!-- <li><a class="button white ae-4 fromRight col-6-12 right">Learn more</a></li> -->
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://store.steampowered.com/">Steam</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://www.miniclip.com/games/en/">Miniclip</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://krunker.io/">Krunker</a></li>  
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://skribbl.io/">Online Drawing Game</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://www.callofduty.com/warzone">COD: Warzone</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://www.jenovachen.com/flowingames/flowing.htm">flow</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://keeptalkinggame.com/">Keep Talking and Nobody Explodes</a></li>
+            
+            </ul>
 
-          <!-- <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
-        </div> -->
+            </div><!-- myDIV closes -->
+            </div><!-- myBtn closes -->
 
-        
+            <div id="anime">
+              <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left">Anime</a>
+              <div id="anime_content">
+              <ul>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://comicyears.com/anime-news/anime-guide-for-beginners-everything-you-wanted-to-know-but-were-afraid-to-ask/">Beginners Guide</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://jw-webmagazine.com/best-anime/">Must Watch</a></li>
+              <li><a class="button white ae-4 fromRight col-6-12 right" href="https://www.animefreak.tv">WatchOnline</a></li>
+                </ul>            
+
+          </div>
+            </div>
+
+            <div id="travel">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left" href="https://driveandlisten.herokuapp.com">Travel the World</a>
+            </div>
+            <div id="kdrama">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left" href="https://kissasian.sh/">K-Drama</a>
+            </div>
+            <div id="ted">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left" href="https://www.ted.com/playlists/180/the_10_most_popular_tedx_talks">Ted-Talks</a>
+            </div>
+            <div id="tech">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left" href="https://techcrunch.com">TechGeeks</a>
+            </div>
+            <div id="hollywood">
+            <a class="button pink gradient ae-3 fromRight cropLeft col-6-12 left" href="www.thehollywoodgossip.com/">Hollywood</a>
+            </div>
+
+        </li>
+
         </div>        
       </div>
     </div>
   </div>
   <div class="background" style="background-image:url(assets/img/background/img-95.jpg)"></div>
 </section>
+
+<script>
+  document.getElementById("anime_content").style.display="none";
+  document.getElementById("games_content").style.display="none";
+  
+  document.getElementById("anime").addEventListener("click", function(){
+    document.getElementById("games_content").style.display="none";
+    var x = document.getElementById("anime_content");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+  });
+  
+  document.getElementById("games").addEventListener("click", function(){
+    document.getElementById("anime_content").style.display="none";
+    var x = document.getElementById("games_content");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+    
+  });
+  
+  </script>
+  
+
+
 
 <!-- Panel Bottom #01 -->
 <nav class="panel bottom forceMobileView">
